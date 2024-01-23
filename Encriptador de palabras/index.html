@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <title>Encriptador-Desencriptador de palabras</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header>
+            <h1 class="tituloAlura">Alura</h1>
+            <h2 class="tituloProgram">Encriptador-Desencriptador de palabras</h2>
+        </header>
+
+        <main class="main">
+            <section class="form box">
+                <form action="">
+                    <label for="input-texto" class="lab">Solo letras minúsculas, sin acento</label>
+                    <input class="text-input" type="text" name="input-texto" id="input-texto" placeholder="Ingrese el texto aqui">
+                    <input class="btn" type="button" value="Encriptar!" id="btn-encriptar" onclick="encriptarPalabra();" >
+                    <input class="btn" type="button" value="Desencriptar!" id="btn-desencriptar" onclick="desencriptarPalabra();">
+                    <button class="boton" onclick="resultado();">Limpiar</button>
+              </form>
+            </section>
+          
+            <section class="msg box">
+              <label for="input-texto" class="lab">Mensaje Encriptado</label>
+              <input class="text-input" type="text" id="msg"></input>
+              <input class="btn" type="button" value="Copiar" id="btn-copy" onclick="copiar();">
+            </section>
+        </main>
+        <script src="encriptador-desencriptador.js"></script>
+    </body>
+</html>
